@@ -1,0 +1,36 @@
+{
+  "name": "rnmaxapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
+    "postinstall": "remotedev-debugger [options]"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^1.7.0",
+    "react": "^16.6.0-alpha.8af6728",
+    "react-native": "^0.57.3",
+    "react-native-image-picker": "^0.27.1",
+    "react-native-maps": "^0.22.0",
+    "react-native-navigation": "^2.0.2582",
+    "react-native-vector-icons": "^6.0.2",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/runtime": "^7.1.2",
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.1",
+    "react-test-renderer": "^16.6.0-alpha.8af6728",
+    "schedule": "^0.4.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
