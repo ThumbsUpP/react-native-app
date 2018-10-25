@@ -5,7 +5,7 @@ import { uiStartLoading, uiStopLoading } from "./index";
 import startMainTabs from "../../screens/MainTabs/StartMainTabs";
 import App from "../../../App";
 
-const API_KEY = "AIzaSyA9u0pe_vvkj9QmOGjniEgxJbxBqek9rfY";
+const API_KEY = "[API_KEY]";
 
 export const tryAuth = (authData, authMode) => {
     return dispatch => {
